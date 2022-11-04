@@ -29,7 +29,7 @@ const getWhenMainProcess = ({ width, heightWithResults }) => {
   const display = screen.getPrimaryDisplay()
 
   const x = parseInt(display.bounds.x + (display.workAreaSize.width - winWidth) / 2, 10)
-  const y = parseInt(display.bounds.y + (display.workAreaSize.height - winHeight) / 2, 10)
+  const y = parseInt(display.bounds.y -40 + (display.workAreaSize.height - winHeight) / 2, 10)
 
   return [x, y]
 }
